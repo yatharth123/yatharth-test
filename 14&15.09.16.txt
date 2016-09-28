@@ -1,0 +1,9 @@
+Topic: C++
+
+Description: 
+1)Different types of casting 
+2)Exception Handling 
+3)Multiple Inheritance
+4)Dynamic Binding 
+
+Doubts: None
