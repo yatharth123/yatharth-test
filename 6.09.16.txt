@@ -1,0 +1,35 @@
+Topic: Introduction to R and SOAP
+
+Description:
+
+1. R is an environment built on Object Oriented,Conventional and R programming language which is used to do statistical analysis and use graphics
+
+2. R is similar to S and it is a GNU project started at Bell LABS
+
+3. It consits of different types of objects(datatypes) 
+
+ a. vectors
+ b. lists
+ c. arrays
+ d. matrices
+ e. tables
+ f. data frames 
+
+4. In R variables are given the appropriate data type according to the assignment to variable 
+5. R can be used for :
+ 
+ a. making data products
+ b. doing statistical analysis
+ c. studying machine leraning 
+ d. all kinds of linear and non linear modeling 
+  
+
+6. R is open source,interpreted language which allows to work with java,C,C++ etc.
+
+SOAP
+
+Simple Object Access Protocol
+
+ It is a messaging protocol that allows the programs that run on disparate systems using HTTP and XML
+
+Doubts:     None
