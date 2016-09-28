@@ -1,0 +1,41 @@
+Source=Linux commands
+date:prints the date
+cal: prints the calender
+uptime:since when the computer is on
+whoami:prints about current user
+w: who is logged in the internet
+sudo apt-get install:download things from the net
+uname -a:gives info about the kernel
+cat /proc/cpuinfo:gives info about the cpu processes
+cat /proc/meminfo:gives info about the memory 
+c:create,x:extract--get,r:append,f:file,v:verbose
+tar -cf tar_file_name.tar file_name:to make compressed(jar,rar,etc) files
+tar -xvf tar_file_name.tar:to create uncompressed tar file 
+tar czf tar_file_name.tar file name:
+gzip file_name:compress file and remove original file
+fg:resume the paused process(paused by ctrl+z) in the foreground
+bg:resume the paused process(""     "" ""  "")in the background
+!!:to get last worked
+EXIT:to exit the terminal
+ifconfig
+
+
+FILE PERMISSIONS
+ 
+r:4,w:2,x:1,d:directory,-:file
+sudo chmod 777 /usr/local/
+//
+Json:JavaScript Object Notation
+//
+Blocks:
+information is used in blocks on the system
+//
+Task Tracker:
+	1)present at every node
+	2)Performs the task
+	3)Sends processed data to the name node
+
+JpbTracker:
+	1)present at every cluster
+	2)maps the data,reduces & recombines it
+     
