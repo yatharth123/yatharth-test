@@ -1,0 +1,49 @@
+Topic : Hadoop Installation 
+
+
+Description:
+
+go to the directory containing tar file
+sudo tar -xvf hadoop-1.0.3.tar.gz hadoop
+sudo chmod 777 /usr/local/
+mv /home/hadoop /usr/local
+sudo apt-get install openssh: server to install open-ssh server
+ssh -keygen -t rsa -P "" :to generate rsa key
+
+cat $HOME/.ssh/id_rsa.pub \
+>> $HOME/.ssh/authorized_keys
+ 
+ssh user_name@localhost :to register key for localhost
+sudo gedit /etc/sysctl.conf 
+sudo apt-get install gksu :to install gksu
+gksudo gedit /etc/sysctl.conf :to disable ipv6
+
+/*
+disable ipv6  
+net .ipv6.conf.all.disable_ipv6 = 1  
+net .ipv6.conf.default .disable_ipv6 = 1 
+net .ipv6.conf.lo.disable_ipv6 = 1
+*/
+ 
+sudo chown -R bdcoe /usr/local/hadoop: to own /usr/local/hadoop R:recursively 
+sudo gedit .bashrc  : opening bashrc file to customize things of the shell for our preference it runs on every shell launch
+
+sudo gedit /usr/local/hadoop/conf/hadoop-env.sh :set hadoop specific environment variables here 
+
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle/ :java implementation to be used 
+
+sudo mkdir -p /app/hadoop/tmp :could have also been done without using -p 
+sudo chown user_name /app/hadoop/tmp :to own /app/hadoop/tmp 
+sudo chmod 750 /app/hadoop/tmp :to set permissions of app hadoop tmp
+sudo gedit /usr/local/hadoop/conf/core-site.xml 
+sudo gedit /usr/local/hadoop/conf/mapred-site.xml
+sudo gedit /usr/local/hadoop/conf/hdfs-site.xml 
+/usr/local/hadoop/bin/hadoop namenode -format : to format name node 
+/usr/local/hadoop/bin/start-all.sh :to start alldaemons
+jps :to view the java processes
+stop-all.sh : to stop all the processes
+
+
+Doubts: None
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
