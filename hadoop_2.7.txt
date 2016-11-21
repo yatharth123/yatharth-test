@@ -1,0 +1,16 @@
+ start-all.sh
+This script is Deprecated. Instead use start-dfs.sh and start-yarn.sh
+Java HotSpot(TM) Client VM warning: You have loaded library /usr/local/hadoop/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+16/11/21 08:20:27 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [localhost]
+localhost: starting namenode, logging to /usr/local/hadoop/logs/hadoop-bdcoe1-namenode-ubuntu.out
+localhost: starting datanode, logging to /usr/local/hadoop/logs/hadoop-bdcoe1-datanode-ubuntu.out
+Starting secondary namenodes [0.0.0.0]
+0.0.0.0: starting secondarynamenode, logging to /usr/local/hadoop/logs/hadoop-bdcoe1-secondarynamenode-ubuntu.out
+Java HotSpot(TM) Client VM warning: You have loaded library /usr/local/hadoop/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+16/11/21 08:21:24 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /usr/local/hadoop/logs/yarn-bdcoe1-resourcemanager-ubuntu.out
+localhost: starting nodemanager, logging to /usr/local/hadoop/logs/yarn-bdcoe1-nodemanager-ubuntu.out
