@@ -1,0 +1,49 @@
+theory:-
+Shuffle:
+Sending data from different Nodes and grouping similar kind of data together 
+In order to shuffle the data new files are written.
+Once the shuffle files are written,they will hang on there.
+If we run the same DAG again so there is no need to create new files so there is a case where there is some caching .
+
+Note : We should cache that RDD on which we are running the maximum no. of actions.
+
+partition in spark - means by which we parallelize the data.
+Initial RDD: Base RDD
+Transformations:
+1. They are lazy
+2. the lazy chain grown from transformations is called a DAG(Directed Acyclic Graph).
+3. they do not execute by themselves but get executed when the actions are called.(eg. forEach,toAll)
+4. RDD transformations are similar to transformation on a Scala Collection View.
+5.
+
+Types:
+filter(_ contains "text")
+
+Actions :
+
+eg.collect()-present in scala Collections api (combination of map and filter)
+It takes in a partial function(function that has case statements for the match clause but doesn't cover all the match cases )
+It pulls all the data and puts it into an array and sends it to the driver.
+
+So the action triggers the DAG, forces the data to be read,modulo any caching 
+
+There are 2 types of  actions :
+1. Driver Actions : invoking the action pulls data back to the driver
+eg. count(),collect()
+2. Distributed Actions :The action executes on the nodes of the cluster
+eg. forEach(),saveAsTextFile()
+Note:Distributed Actions are better as Driver Actions cause bottleneck situations 
+
+ways to create an RDD:-
+1. Parallelizing a collection
+    parallelize causes to partition the data and send the data to the network so that we can apply parallel algorithms on the data.
+Note : Do not do it in production as it causes the driver to become bottle neck for I/O 
+
+2.  Read data from external sources (usually distributed) like HDFS,Cassandra,HDFS,etc.
+    all nodes do their own I/O.
+3.  Transforming an existing RDD into a new RDD
+    example: applying map again and again on the input(say array of string) and transforming it into a new form
+4.  Via Spark Streaming:
+    Not yet discussed
+  
+ 
