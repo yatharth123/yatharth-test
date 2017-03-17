@@ -1,6 +1,6 @@
 ---this shows how to change the working directory in R---
 
-open Rprofile.site in notepad and then add a line with command setwd(path) at the end and enter a space
+open Rprofile.site in notepad and then add a line with command setwd("path") at the end and enter a space
 
 Rprofile.site is present in the folder of R\etc
 eg. mine was in C:\Program Files\R\R-3.3.2\etc
